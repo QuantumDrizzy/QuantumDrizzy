@@ -1,151 +1,181 @@
 # Hi, I'm Antonio 👋🏻
 
-**AI Engineer · Data Scientist · ML Engineer**  
-📍 Murcia, Spain → 🇨🇭 Switzerland (next step)
+**Data Scientist · Complex Signals & Applied ML**  
+📍 Murcia, Spain · Remote · Open to relocation: Switzerland
 
 ---
 
 ## About me
 
-MSc in AI & Innovation (Founderz × Microsoft). Self-built technical stack spanning Data Engineering, Machine Learning, Generative AI, RAG systems, and Quantum Computing. Certified across the IBM and Google Professional ecosystems.
+Self-taught data scientist with a focus on complex signal analysis and applied ML across scientific domains. Projects span computational neuroscience, geophysics, astronomy, bioinformatics, and quantum ML.
 
-I've been working with AI systems since 2021 — before it was mainstream. I don't just study these fields — I connect them. My background spans ML pipelines, quantum circuit simulation, geophysical data analysis, and philosophy of mind. I use AI as a collaborative thinking tool, not a shortcut.
+Methodological honesty is a core practice — all results are reported with their limitations and validated without data leakage.
 
-Currently completing IBM + Google certification stack while building production AI systems locally.
+Currently studying Computational Neuroscience (University of Washington) and completing IBM + Google certification stack.
 
 ---
 
 ## 🛠️ Tech Stack
 
 **Languages**  
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
-[![R](https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white)](https://www.r-project.org)
-[![SQL](https://img.shields.io/badge/SQL-336791?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org)
-[![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash)
+Python · SQL · R · Bash · REST APIs
 
-**Data & ML**  
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org)
-[![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)](https://numpy.org)
-[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=python&logoColor=white)](https://matplotlib.org)
-[![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=flat&logo=python&logoColor=white)](https://seaborn.pydata.org)
+**ML & Signals**  
+scikit-learn · PyTorch · MNE · antropy · EEG/LFP pipelines · time-series analysis
+
+**Quantum ML**  
+PennyLane · Cirq · VQC · PEPS tensor networks · CUDA-Q
 
 **Gen AI & RAG**  
-[![FAISS](https://img.shields.io/badge/FAISS-Vector%20Store-7B2FBE?style=flat)](https://faiss.ai)
-[![Claude](https://img.shields.io/badge/Claude-Anthropic-D97706?style=flat)](https://anthropic.com)
-[![Gemini](https://img.shields.io/badge/Gemini-Google-4285F4?style=flat&logo=google&logoColor=white)](https://deepmind.google/technologies/gemini)
+FAISS · RAG pipelines · ReAct agents · prompt engineering
 
 **Engineering**  
-[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)](https://sqlite.org)
-[![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat&logo=python&logoColor=white)](https://www.sqlalchemy.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-
-**Quantum**  
-[![Cirq](https://img.shields.io/badge/Cirq-Google%20Quantum%20AI-5C2D91?style=flat&logo=google&logoColor=white)](https://quantumai.google/cirq)
-
-**Automation**  
-[![Copilot](https://img.shields.io/badge/Microsoft%20Copilot-258FFA?style=flat&logo=microsoft&logoColor=white)](https://copilot.microsoft.com)
-[![Power Platform](https://img.shields.io/badge/Power%20Platform-742774?style=flat&logo=microsoft&logoColor=white)](https://powerplatform.microsoft.com)
-[![Make](https://img.shields.io/badge/Make-6D00CC?style=flat&logo=make&logoColor=white)](https://make.com)
-[![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white)](https://n8n.io)
+ETL pipelines · SQLite · SQLAlchemy · FastAPI · MLOps · feature stores · Kafka
 
 **Ecosystem**  
-[![GCP](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com)
-[![IBM Watson](https://img.shields.io/badge/IBM%20Watson-054ADA?style=flat&logo=ibm&logoColor=white)](https://www.ibm.com/watson)
-[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)](https://jupyter.org)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com)
+Git/GitHub · Jupyter · Google Cloud · IBM Watson · JAX · Plotly · Folium
 
 ---
 
 ## 📁 Portfolio
 
-### 🪐 Exoplanet Hunter — NASA Kepler Data
-> Google Advanced Data Analytics Certificate
+### ⚡ Epileptic Seizure Detection — CHB-MIT
+Clinical EEG analysis on paediatric focal epilepsy (PhysioNet CHB-MIT, neurologist-annotated).
 
-Classification of 9,564 NASA Kepler Objects of Interest. Distinguishing confirmed exoplanets from false positives — AUC 0.99, 14 habitable-zone candidates identified.
+- Leave-One-Seizure-Out validation: **F1 = 0.945** (interictal vs ictal)
+- Preictal prediction: **F1 = 0.883**
+- Cross-patient generalisation without retraining: F1 = 0.09–0.41 — each brain has unique seizure signature
+- LZC complexity trajectory confirms preictal hypersynchrony · H-H simulation arc: p = 0.0016
 
-`pandas` `scikit-learn` `scipy` `Random Forest` `Mann-Whitney U`
+`MNE` `scikit-learn` `antropy` `SVM` `Hodgkin-Huxley`
 
-[![Repo](https://img.shields.io/badge/GitHub-kepler--exoplanet--analysis-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/kepler-exoplanet-analysis)
+[![Repo](https://img.shields.io/badge/GitHub-eeg--epilepsy-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/eeg-epilepsy)
 
 ---
 
-### 🌍 Global Seismic Activity — USGS Earthquakes
-> IBM Data Science Professional Certificate
+### 🧠 EEG Motor Imagery BCI Pipeline
+4-stage pipeline on PhysioNet EEGBCI (64 channels, 160 Hz, 10 subjects).
 
-10,500+ earthquakes from 1900–2024. Interactive Folium maps, SQL analysis, tsunami hypothesis testing, magnitude classification.
+- CSP + SVM: **99–100%** on 2-class motor imagery
+- EEGNet CNN: **62%** on 4-class
+- VQC (PennyLane): **45–54%** · Barren plateau documented
 
-`pandas` `folium` `sqlite3` `scipy` `Gradient Boosting`
+`MNE` `EEGNet` `PennyLane` `PyTorch` `CSP`
+
+[![Repo](https://img.shields.io/badge/GitHub-eeg--pipeline-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/eeg-pipeline)
+
+---
+
+### 🔬 Computational Neuroscience — H-H + LZC
+Biophysics + information theory applied to neural signals.
+
+- Hodgkin-Huxley model from scratch (4 ODEs, RK45) — action potential, f-I curve, 20-neuron network
+- LZC applied to simulation, motor imagery EEG, and epileptic EEG
+- Sample Entropy resting vs motor: p = 0.0043 · LZC: p = 0.0412
+
+`scipy` `antropy` `NumPy` `Matplotlib`
+
+[![Repo](https://img.shields.io/badge/GitHub-comp--neuro--projects-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/comp-neuro-projects)
+
+---
+
+### 🌍 Global Seismic Activity — USGS + NOAA
+**106,358** real earthquakes (M≥5.0, 1900–2026) cross-referenced with NOAA validated tsunami catalogue.
+
+- Shallow earthquakes generate tsunamis **×14** more frequently than deep (Chi-square p < 0.001)
+- Gradient Boosting AUC = **0.725** — pre-event features only, no leakage
+
+`pandas` `folium` `SQLite` `scipy` `Gradient Boosting`
 
 [![Repo](https://img.shields.io/badge/GitHub-seismic--activity--analysis-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/seismic-activity-analysis)
 
 ---
 
-### ✈️ Aviation ETL Pipeline — Global Route Network
-> IBM Data Engineering Professional Certificate
+### 🪐 Exoplanet Classification — NASA Kepler DR25
+9,564 Kepler Objects of Interest — confirmed planets vs false positives using physical observables only.
 
-End-to-end ETL pipeline. Star schema data warehouse: 49 airports, 30 airlines, 1,936 routes, 15,000 flights. Full data quality validation.
+- koi_score excluded (data leakage) — corrected **AUC = 0.94** (Random Forest)
+- 14 confirmed planets in habitable zone
 
-`pandas` `SQLAlchemy` `SQLite` `ETL` `Star Schema`
+`pandas` `scikit-learn` `scipy` `Random Forest`
+
+[![Repo](https://img.shields.io/badge/GitHub-kepler--exoplanet--analysis-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/kepler-exoplanet-analysis)
+
+---
+
+### ⚛️ ARC-QRL-PEPS Solver — ARC-AGI-3
+Quantum Reinforcement Learning agent with PEPS tensor networks for the ARC-AGI-3 Kaggle competition.
+
+- Energy-Based Model with triplet margin loss + MCMC Metropolis-Hastings inference
+- 25 environments via official ARC-AGI SDK · JAX/optax training loop
+- Proof of concept in active development
+
+`JAX` `PennyLane` `optax` `PEPS` `Metropolis-Hastings`
+
+[![Repo](https://img.shields.io/badge/GitHub-arc--qrl--peps--solver-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/arc-qrl-peps-solver)
+
+---
+
+### 🔭 Quantum Geo-Metrology — IGRF-14
+Quantum feature maps applied to IGRF-14 magnetic pole trajectory data (North Pole 2005).
+
+`PennyLane` `Cirq` `NumPy` `scikit-learn`
+
+[![Repo](https://img.shields.io/badge/GitHub-quantum--geo--metrology-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/quantum-geo-metrology)
+
+---
+
+### 🇪🇸 Spain Situation Room — Real-Time Dashboard
+Live 3D dashboard: 400+ flights (OpenSky), electricity prices (E·SIOS), weather radar (RainViewer).
+
+`Next.js` `TypeScript` `Deck.GL` `MapLibre` `Kafka`
+
+[![Repo](https://img.shields.io/badge/GitHub-spain--situation--room-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/spain-situation-room)
+
+---
+
+### ✈️ Aviation ETL Pipeline
+49 airports · 30 airlines · 1,936 routes · 15,000 flights into SQLite star schema (Kimball modelling).
+
+`pandas` `SQLAlchemy` `SQLite` `ETL`
 
 [![Repo](https://img.shields.io/badge/GitHub-aviation--etl--pipeline-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/aviation-etl-pipeline)
 
 ---
 
-### 🤖 Scientific Paper Q&A — RAG Pipeline
-> IBM Generative AI & RAG Agents Certificate
-
-Full RAG pipeline over 30 seminal AI/ML papers. FAISS vector store, semantic retrieval, ReAct agent with tool use. Precision@3=0.73.
-
-`FAISS` `scikit-learn` `RAG` `ReAct Agent` `Prompt Engineering`
-
-[![Repo](https://img.shields.io/badge/GitHub-rag--scientific--papers-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/rag-scientific-papers)
-
----
-
-### ⚡ IoT Anomaly Detection — Model Serving API
-> IBM AI Engineering Professional Certificate
-
-50,000 industrial sensor readings, 4 anomaly types. FastAPI REST service, Pydantic validation, PSI drift monitoring.
-
-`scikit-learn` `FastAPI` `Pydantic` `Isolation Forest` `GBM`
-
-[![Repo](https://img.shields.io/badge/GitHub-iot--anomaly--detection-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/iot-anomaly-detection)
-
----
-
 ### 🌬️ Wind Turbine Predictive Maintenance — MLOps
-> IBM ML Engineering Professional Certificate
+Full MLOps pipeline: versioned feature store, experiment tracking, model registry, CI/CD design.
 
-Full MLOps pipeline. Versioned feature store, experiment tracking, model registry, business metric evaluation (€ROI), retraining strategy.
-
-`scikit-learn` `MLOps` `Feature Store` `TimeSeriesSplit` `GBM`
+`scikit-learn` `MLflow` `TimeSeriesSplit` `Feature Store`
 
 [![Repo](https://img.shields.io/badge/GitHub-wind--turbine--mlops-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/wind-turbine-mlops)
 
 ---
 
-## 📚 Certifications in Progress
+### 🤖 Scientific Paper Q&A — RAG Pipeline
+30 arXiv papers · FAISS indexing · ReAct agent with tool use · Precision@3 = 0.73
 
-| Certificate | Provider | Status |
-|-------------|----------|--------|
-| Google Advanced Data Analytics | Google / Coursera | 🔄 In progress |
-| IBM Data Engineering Professional | IBM / Coursera | 🔄 In progress |
-| IBM Data Science Professional | IBM / Coursera | 🔄 In progress |
-| IBM Generative AI & RAG Agents | IBM / Coursera | 🔄 In progress |
-| IBM AI Engineering Professional | IBM / Coursera | 🔄 In progress |
-| IBM ML Engineering Professional | IBM / Coursera | 🔄 In progress |
-| Google Professional Data Engineer | Google Cloud | 📅 Planned |
-| Google Professional ML Engineer | Google Cloud | 📅 Planned |
+`FAISS` `scikit-learn` `RAG` `ReAct`
+
+[![Repo](https://img.shields.io/badge/GitHub-rag--scientific--papers-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/rag-scientific-papers)
 
 ---
 
-## 🎯 Currently
+### ⚡ IoT Anomaly Detection + FastAPI
+50,000 sensor readings · Isolation Forest AUC ~0.85 (honest benchmark on synthetic data) · FastAPI REST service · PSI drift monitoring
 
-- Completing IBM + Google certification stack
-- Building production AI systems locally
-- English C1 in progress · German A2 (active)
-- Target: remote work → Switzerland → quantum security
+`scikit-learn` `FastAPI` `Isolation Forest`
+
+[![Repo](https://img.shields.io/badge/GitHub-iot--anomaly--detection-181717?style=flat&logo=github)](https://github.com/QuantumDrizzy/iot-anomaly-detection)
+
+---
+
+## 📚 Currently
+
+- Computational Neuroscience — University of Washington / Coursera
+- IBM Professional Certificates (Data Science · Data Engineering · AI Engineering · ML Engineering · GenAI)
+- Google Advanced Data Analytics
+- German: active study
 
 ---
 
