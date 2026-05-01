@@ -21,7 +21,7 @@ Neurorights are not a setting you can toggle off. They are enforced at the kerne
 - **[HELIOS](https://github.com/QuantumDrizzy/HELIOS)** — post-quantum crypto + CNN-LSTM solar predictor + Rust MPPT · ~57%
 - **[MAGNON](https://github.com/QuantumDrizzy/MAGNON)** — RF noise in avian magnetic compass via Lindblad · ~48%
 - **[Q-NAA](https://github.com/QuantumDrizzy/Q-NAA)** — Quantum Neural Attention Analyzer · Rust + CUDA · ~82%
-- **[eeg-epilepsy](https://github.com/QuantumDrizzy/eeg-epilepsy)** — seizure detection F1=0.945 · feeds into khaos-core preprocessing
+- **[EEG-Epilepsy](https://github.com/QuantumDrizzy/EGG-Epilepsy)** — seizure detection F1=0.945 · feeds into khaos-core preprocessing
 
 ---
 
