@@ -19,8 +19,8 @@ Neurorights are not a setting you can toggle off. They are enforced at the kerne
 
 - **[CryptoTN-GPU](https://github.com/QuantumDrizzy/CryptoTN-GPU)** — GPU tensor networks for cryptochrome radical-pair spin dynamics. χ ≥ 2500 on RTX Blackwell (sm_120).
 - **[HELIOS](https://github.com/QuantumDrizzy/HELIOS)** — post-quantum crypto + CNN-LSTM solar predictor + Rust MPPT · ~57%
+- **[EIGEN](https://github.com/QuantumDrizzy/EIGEN)** — Quantum Neural Attention Analyzer · Rust + CUDA · ~82%
 - **[MAGNON](https://github.com/QuantumDrizzy/MAGNON)** — RF noise in avian magnetic compass via Lindblad · ~48%
-- **[Q-NAA](https://github.com/QuantumDrizzy/Q-NAA)** — Quantum Neural Attention Analyzer · Rust + CUDA · ~82%
 - **[EEG-Epilepsy](https://github.com/QuantumDrizzy/EGG-Epilepsy)** — seizure detection F1=0.945 · feeds into khaos-core preprocessing
 
 ---
