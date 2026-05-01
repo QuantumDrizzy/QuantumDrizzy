@@ -5,9 +5,9 @@ with neurorights enforced at the hardware level — not as a feature, as a const
 
 ---
 
-## khaos
+## KHAOS
 
-**[khaos](https://github.com/QuantumDrizzy/khaos)** — closed-loop BCI kernel with post-quantum neural key derivation.
+**[KHAOS](https://github.com/QuantumDrizzy/KHAOS)** — closed-loop BCI kernel with post-quantum neural key derivation.
 
 12-qubit quantum decode layer. FPGA tactile feedback loop. End-to-end latency < 250µs. Neural key derivation via Kyber-1024. Acquisition pipeline in Verilog/HLS. Quantum-classical hybrid decode: variational QNN + Kalman filter. OptiX 8 volumetric neural visualization.
 
@@ -17,7 +17,7 @@ Neurorights are not a setting you can toggle off. They are enforced at the kerne
 
 ## research satellites
 
-- **[cryptotn-gpu](https://github.com/QuantumDrizzy/cryptotn-gpu)** — GPU tensor networks for cryptochrome radical-pair spin dynamics. χ ≥ 2500 on RTX Blackwell (sm_120). Target: arXiv preprint.
+- **[CryptoTN-GPU](https://github.com/QuantumDrizzy/CryptoTN-GPU)** — GPU tensor networks for cryptochrome radical-pair spin dynamics. χ ≥ 2500 on RTX Blackwell (sm_120). Target: arXiv preprint.
 - **[Q-NAA](https://github.com/QuantumDrizzy/Q-NAA)** — Quantum Neural Attention Analyzer · Rust + CUDA · ~82%
 - **[HELIOS](https://github.com/QuantumDrizzy/HELIOS)** — post-quantum crypto + CNN-LSTM solar predictor + Rust MPPT · ~57%
 - **[MAGNON](https://github.com/QuantumDrizzy/MAGNON)** — RF noise in avian magnetic compass via Lindblad · ~48%
