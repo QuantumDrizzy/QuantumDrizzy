@@ -12,13 +12,13 @@ I build bare-metal research tools that connect quantum physics to neuroscience �
 
 **[SUBSTRATE](https://github.com/QuantumDrizzy/SUBSTRATE)** — Real-time electromagnetic observatory. 10-layer scientific pipeline (NOAA, USGS, JPL, ESA Planck) with Lindblad quantum magnetoreception solver. Native CUDA C++ kernel: **354× speedup over JAX** (precision diff: 4.77e-07). Rust + Python + CUDA. 60 FPS wGPU correlation dashboard.
 
-**[KINECT-NIR](https://github.com/QuantumDrizzy/KINECT-NIR)** — Real-time IR detection pipeline. CUDA CA-CFAR + MobileViT-XT + Kalman/Mahalanobis gating + Celestrak TLE matching. 180 MB real telemetry. Arduino servo slew-to-cue. Hardware-software integration.
+**[HELIOS](https://github.com/QuantumDrizzy/HELIOS)** — Solar infrastructure engine. Real-time PVGIS data integration + CNN-LSTM solar irradiance predictor. Operational in Murcia, Spain; architected for Swiss grid compatibility. Rust + IPC bridge + egui dashboard.
 
 ---
 
 ### field deployments
 
-**[HELIOS](https://github.com/QuantumDrizzy/HELIOS)** — Solar infrastructure engine. Real-time PVGIS data integration + CNN-LSTM solar irradiance predictor. Operational in Murcia, Spain; architected for Swiss grid compatibility. Rust + IPC bridge + egui dashboard.
+**[KINECT-NIR](https://github.com/QuantumDrizzy/KINECT-NIR)** — Real-time IR detection pipeline. CUDA CA-CFAR + MobileViT-XT + Kalman/Mahalanobis gating + Celestrak TLE matching. 180 MB real telemetry. Arduino servo slew-to-cue. Hardware-software integration.
 
 ---
 
