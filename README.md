@@ -29,6 +29,8 @@ I build bare-metal research tools that connect quantum physics to neuroscience �
 | [ARC-QRL-PEPS](https://github.com/QuantumDrizzy/ARC-QRL-PEPS) | JAX + PEPS tensor networks for ARC-AGI. Frontier structured reasoning. |
 | [EIGEN](https://github.com/QuantumDrizzy/EIGEN) | Pure-Rust Lanczos solver. Ising lattice (dim=65536). egui dashboard at 60 FPS. |
 | [ASTRUM](https://github.com/QuantumDrizzy/astrum) | Native Android observatory. Real-time orbital mechanics engine in Kotlin. |
+| [SESHAT](https://github.com/QuantumDrizzy/SESHAT) | QUBO-based decipherment of Linear A (Minoan, ~1800 BCE). SA 100% anchor recovery. Manuscript pending arXiv. |
+| [LOGOS](https://github.com/QuantumDrizzy/LOGOS) | Temporal knowledge graph. Ingests all NEXUS events, builds causal graph in SQLite. |
 
 ---
 
@@ -42,6 +44,7 @@ cuTensorNet · Lindblad solvers · PEPS Tensor Networks · Lanczos · HMC · Fer
 
 **hardware & safety**  
 Formal AST verification · SHA-256 audit chains · FPGA (stub) · Kinect v2 · Solar array controllers
+Post-quantum cryptography (ML-DSA-65 · ML-KEM-768 · NIST FIPS 2024)
 
 ---
 
