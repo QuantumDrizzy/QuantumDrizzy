@@ -62,4 +62,4 @@ Strong focus on **sovereign AI, quantum-informed simulation, neural interfaces a
 
 **Open to work** in AI Research, High-Performance Computing, Quantum Simulation or Neural Interface Engineering.
 
-[LinkedIn](https://www.linkedin.com/in/antonio-rodr%C3%ADguez-9bb538220/) · [ProtonMail](mailto:drizzyrdrgz.exe@protonmail.com)
+[LinkedIn](https://www.linkedin.com/in/antonio-zambudio-rodriguez/) · [ProtonMail](mailto:drizzyrdrgz.exe@protonmail.com)
