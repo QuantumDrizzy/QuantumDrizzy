@@ -36,7 +36,7 @@ Real-time MPPT + CNN-LSTM irradiance forecasting with post-quantum trust anchors
 | Project | Focus | Highlights |
 |---------|-------|----------|
 | PROMETHEUS | Distributed LLM Training | PyTorch FSDP ZeRO-3, Flash Attention 2, activation checkpointing, MFU tracking. Scales from 1 to multi-node via SLURM |
-| SESHAT | Quantum-Assisted Decipherment | QUBO + Simulated Annealing / Quantum-Inspired Annealing for Linear A. 100% anchor recovery. Manuscript pending arXiv |
+| SESHAT | Quantum-Assisted Decipherment | QUBO + Simulated Annealing / Quantum-Inspired Annealing for Linear A. 100% anchor recovery.|
 | ARC-QRL-PEPS | Quantum-Neuromorphic ARC-AGI | PEPS tensor networks + Energy-Based Model + neuromodulated MCMC (dopamine/noradrenaline/GABA heuristics) |
 | EIGEN | Large-scale Eigensolver | Pure-Rust Lanczos for 65536-dim Ising lattices, 60 FPS egui dashboard |
 
