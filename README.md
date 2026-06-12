@@ -16,6 +16,7 @@ I build bare-metal systems that combine **GPU-accelerated simulation**, **quantu
 - **SUBSTRATE** — Multi-scale physics & quantum-biology simulation framework; hand-written CUDA (sm_120) with an honest roofline (kernel-only 3×→154× vs JAX-CPU) and tensor-network solvers.
 - **BLACKWALL** — Honest precision-spectrum GEMM roofline on Blackwell (sm_120): FP32 → FP4 measured, FP4 at 20× FP32 via cuBLASLt, anchored to the computed peak.
 - **TESSERA** — Neural-guided real quantum annealing via tensor networks (MPS/TEBD); a GNN learns the schedule, all on a local GPU.
+- **DRIFT** — A microscope for physical computation. Optimization (QUBO), self-assembly (Wang tiles), self-replication (crystals) and neural memory (Hopfield, Nobel Physics 2024) as ground states of one Ising Hamiltonian; tensor-network χ as the compute-density thermometer.
 - **Blaze** — Tensor-Train / MPS compression for high-order scientific & quantum-state data, with GPU SVD and an MPS↔circuit bridge.
 - **HELIOS** — 24/7 predictive DC-microgrid controller — Rust MPPT loop + CNN-LSTM forecasting, post-quantum trust anchors.
 - **PROMETHEUS** — Distributed LLM pretraining framework — PyTorch FSDP ZeRO-3, activation checkpointing, Flash Attention 2.
