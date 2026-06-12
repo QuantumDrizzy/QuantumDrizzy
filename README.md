@@ -1,32 +1,23 @@
 # Antonio Zambudio
 
-Research Software Engineer focused on high-performance systems for AI and scientific computing.
+Research Software Engineer / Systems Architect. I build bare-metal systems at the intersection of high-performance computing, quantum-inspired methods, and AI. Rust, C++, and CUDA for the parts that need to be fast; Python where it pays. Local-first by default.
 
-I build bare-metal systems that combine **GPU-accelerated simulation**, **quantum & tensor-network computing**, and **agentic architectures** — emphasizing performance, low-level optimization, and sovereign, local-first design. No cloud by default.
+### Open projects
 
-### Core Focus Areas
-- High-performance systems & GPU acceleration (CUDA, sm_120 Blackwell)
-- Tensor networks & quantum-inspired computing
-- Real-time & embedded systems (Rust)
-- Agentic architectures & computational-neuroscience foundations
+- **[DRIFT](https://github.com/QuantumDrizzy/DRIFT)** — A microscope for physical computation: optimization (QUBO), self-assembly (Wang tiles), self-replication (crystals), and neural memory (Hopfield, Nobel Physics 2024) read as ground states of one Ising Hamiltonian. Tensor-network χ measures compute density.
 
-### Selected Projects
+- **[TESSERA](https://github.com/QuantumDrizzy/TESSERA)** — Neural-guided real quantum annealing via tensor networks (MPS/TEBD); a GNN learns the schedule on a local GPU.
 
-- **KHAOS** — Closed-loop BCI kernel with sub-100µs CUDA DSP latency, compile-time-enforced neuroethics, and post-quantum cryptography.
-- **SUBSTRATE** — Multi-scale physics & quantum-biology simulation framework; hand-written CUDA (sm_120) with an honest roofline (kernel-only 3×→154× vs JAX-CPU) and tensor-network solvers.
-- **BLACKWALL** — Honest precision-spectrum GEMM roofline on Blackwell (sm_120): FP32 → FP4 measured, FP4 at 20× FP32 via cuBLASLt, anchored to the computed peak.
-- **TESSERA** — Neural-guided real quantum annealing via tensor networks (MPS/TEBD); a GNN learns the schedule, all on a local GPU.
-- **DRIFT** — A microscope for physical computation. Optimization (QUBO), self-assembly (Wang tiles), self-replication (crystals) and neural memory (Hopfield, Nobel Physics 2024) as ground states of one Ising Hamiltonian; tensor-network χ as the compute-density thermometer.
-- **Blaze** — Tensor-Train / MPS compression for high-order scientific & quantum-state data, with GPU SVD and an MPS↔circuit bridge.
-- **HELIOS** — 24/7 predictive DC-microgrid controller — Rust MPPT loop + CNN-LSTM forecasting, post-quantum trust anchors.
-- **PROMETHEUS** — Distributed LLM pretraining framework — PyTorch FSDP ZeRO-3, activation checkpointing, Flash Attention 2.
-- **EIGEN** — Quantum-inspired threat modeling via transverse-field Ising models and a pure-Rust Lanczos solver.
-- **KINECT-NIR** — Real-time IR object detection & tracking — CUDA CA-CFAR kernel + TensorRT INT8 + Kalman tracking.
-- **chiron** — Bare-metal genomic assembly — lock-free k-mer counting, de Bruijn graphs, and a quantum walk for repeat resolution.
+### Working areas
 
-*(more: SESHAT — QUBO/simulated-annealing on the undeciphered Linear A script)*
+Tensor networks (MPS/TT compression, ground-state methods) · GPU acceleration on Blackwell (sm_120) with honest, kernel-only rooflines · Rust real-time control loops with post-quantum primitives · energy-minimization models across optimization, memory, and self-assembly · agentic systems.
+
+Several larger systems are in private development. Happy to discuss them in conversation.
 
 ### Stack
-CUDA (sm_120) · C++17 · Rust · Python · PyTorch · cuBLAS/cuBLASLt · TensorRT · Cirq · SLURM
 
-*Performant, sovereign systems at the intersection of AI, simulation, and quantum computing — bare-metal, local-first, honest benchmarks.*
+CUDA (sm_120) · C++ · Rust · Python · PyTorch · cuBLAS/cuBLASLt · TensorRT · Cirq · SLURM
+
+---
+
+*Bare-metal · local-first · honest benchmarks.*
