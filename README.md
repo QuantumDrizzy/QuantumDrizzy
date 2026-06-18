@@ -32,10 +32,16 @@ whether I can write fast kernels and back the numbers.
 
 ## Selected systems — each proves one thing
 
+**[BLACKWALL](https://github.com/QuantumDrizzy/BLACKWALL) · [ICEPICK](https://github.com/QuantumDrizzy/ICEPICK) · [FLATLINE](https://github.com/QuantumDrizzy/FLATLINE) — I reverse-engineer the silicon I run on.**
+A three-part Blackwell (sm_120) teardown, hand-written CUDA: the compute roofline
+(BLACKWALL), the microarchitecture beneath it — instruction latencies, caches, the SASS the
+compiler actually emits (ICEPICK), and the energy/thermal wall (FLATLINE). The metal,
+measured directly — compute · communication · energy.
+
 **[AETHER](https://github.com/QuantumDrizzy/AETHER) — I implement hard physics *correctly*.**
 Computational-materials lab: electronic structure, the full topological set (SSH, Haldane,
-Kane–Mele), metamaterials, GPU kernels, inverse design. **~90 tests; every claim checked
-against a closed form.** Correctness isn't optional.
+Kane–Mele), metamaterials, GPU-accelerated solvers, inverse design. **~90 tests; every claim
+checked against a closed form.** Correctness isn't optional.
 
 **[KHAOS](https://github.com/QuantumDrizzy/KHAOS) — I build real-time systems where safety is *enforced*, not hoped for.**
 Closed-loop BCI kernel: a CUDA DSP hot-path, stimulation limits guaranteed by the C++
