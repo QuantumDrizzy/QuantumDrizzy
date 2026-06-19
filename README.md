@@ -18,7 +18,7 @@ C / C++17 (compile-time guarantees) · Python (ML, glue, analysis). No cloud, by
 
 ## Flagship — [SUBSTRATE](https://github.com/QuantumDrizzy/SUBSTRATE): *can I make the metal go fast — and prove it?*
 
-A multi-physics / quantum-biology simulation engine. The physics is the hard problem;
+A multi-physics / bio-electromagnetics simulation engine. The physics is the hard problem;
 the point is the engine underneath: **hand-written CUDA (sm_120) with an honest,
 kernel-only roofline — 3×→154× vs JAX-CPU, end-to-end break-even stated, not hidden** —
 plus tensor-network solvers for many-body systems. Start here if you want to know
