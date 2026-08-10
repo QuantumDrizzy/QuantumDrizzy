@@ -35,14 +35,14 @@ kernels and back the numbers.
 
 ## Research grounds — the same skill, pointed at hard problems
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/QuantumDrizzy/DRIFT/master/figures/phase7_four_faces.png" width="720">
-</p>
-
 **[DRIFT](https://github.com/QuantumDrizzy/DRIFT) — the structure under the problem.**
 Optimization, self-assembly and neural memory (Hopfield) read as ground states of *one* Ising
 Hamiltonian — the unification thesis, made measurable and benchmarked against the Landauer floor of
 computation.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/QuantumDrizzy/DRIFT/master/figures/phase7_four_faces.png" width="720">
+</p>
 
 **[KHAOS](https://github.com/QuantumDrizzy/KHAOS) — real-time systems where safety is *enforced*, not hoped for.**
 Closed-loop BCI kernel: a CUDA DSP hot-path, stimulation limits guaranteed by the C++ compiler
