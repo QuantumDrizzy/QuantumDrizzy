@@ -21,19 +21,23 @@ by minimizing energy; the systems here exploit it.*
 
 ## Flagship — [SUBSTRATE](https://github.com/QuantumDrizzy/SUBSTRATE): *can I make the metal go fast — and prove it?*
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/QuantumDrizzy/SUBSTRATE/master/benchmarks/plots/plaquette_roofline.png" width="720">
+</p>
+
 A multi-physics / bio-electromagnetics simulation engine. The physics is the hard problem; the point
 is the engine underneath: **hand-written CUDA (sm_120) with an honest, kernel-only roofline — measured
 on a Blackwell sm_120, re-runnable on any CUDA GPU; end-to-end break-even stated, not hidden** — plus
 tensor-network solvers for many-body systems. Start here if you want to know whether I can write fast
 kernels and back the numbers.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/QuantumDrizzy/SUBSTRATE/master/benchmarks/plots/plaquette_roofline.png" width="720">
-</p>
-
 ---
 
 ## Research grounds — the same skill, pointed at hard problems
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/QuantumDrizzy/DRIFT/master/figures/phase7_four_faces.png" width="720">
+</p>
 
 **[DRIFT](https://github.com/QuantumDrizzy/DRIFT) — the structure under the problem.**
 Optimization, self-assembly and neural memory (Hopfield) read as ground states of *one* Ising
@@ -53,10 +57,6 @@ closed form.** Correctness isn't optional.
 **[HELIOS](https://github.com/QuantumDrizzy/HELIOS) — control loops that can't go down.**
 24/7 predictive DC-microgrid controller. Rust MPPT loop (100 ms tick), CNN-LSTM forecasting,
 post-quantum trust anchors. Where the lights actually have to stay on.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/QuantumDrizzy/DRIFT/master/figures/phase7_four_faces.png" width="720">
-</p>
 
 ## The metal — systems & hardware
 
