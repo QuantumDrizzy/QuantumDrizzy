@@ -57,5 +57,3 @@ closed form.** Correctness isn't optional.
 **[HELIOS](https://github.com/QuantumDrizzy/HELIOS) — control loops that can't go down.**
 24/7 predictive DC-microgrid controller. Rust MPPT loop (100 ms tick), CNN-LSTM forecasting,
 post-quantum trust anchors. Where the lights actually have to stay on.
-
----
