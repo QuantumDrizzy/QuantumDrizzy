@@ -33,38 +33,36 @@ kernels and back the numbers.
 
 ---
 
-## The metal — systems & hardware
-
-**[Blaze](https://github.com/QuantumDrizzy/Blaze) — GPU compression for massive scientific & quantum data.**
-Tensor-Train / MPS compression, GPU SVD, MPS↔circuit bridge. The specialist tool the rest of the
-ecosystem leans on.
-
----
-
 ## Research grounds — the same skill, pointed at hard problems
-
-**[AETHER](https://github.com/QuantumDrizzy/AETHER) — hard physics, implemented *correctly*.**
-Computational-materials lab: electronic structure, the full topological set (SSH, Haldane, Kane–Mele),
-metamaterials, GPU-accelerated solvers, inverse design. **~90 tests; every claim checked against a
-closed form.** Correctness isn't optional.
-
-**[KHAOS](https://github.com/QuantumDrizzy/KHAOS) — real-time systems where safety is *enforced*, not hoped for.**
-Closed-loop BCI kernel: a CUDA DSP hot-path, stimulation limits guaranteed by the C++ compiler
-(`static_assert`), three independent safety layers, post-quantum audit ledger. Sub-100 µs is the
-design target — *marked unverified until benchmarked end-to-end.*
-
-**[HELIOS](https://github.com/QuantumDrizzy/HELIOS) — control loops that can't go down.**
-24/7 predictive DC-microgrid controller. Rust MPPT loop (100 ms tick), CNN-LSTM forecasting,
-post-quantum trust anchors. Where the lights actually have to stay on.
 
 **[DRIFT](https://github.com/QuantumDrizzy/DRIFT) — the structure under the problem.**
 Optimization, self-assembly and neural memory (Hopfield) read as ground states of *one* Ising
 Hamiltonian — the unification thesis, made measurable and benchmarked against the Landauer floor of
 computation.
 
+**[KHAOS](https://github.com/QuantumDrizzy/KHAOS) — real-time systems where safety is *enforced*, not hoped for.**
+Closed-loop BCI kernel: a CUDA DSP hot-path, stimulation limits guaranteed by the C++ compiler
+(`static_assert`), three independent safety layers, post-quantum audit ledger. Sub-100 µs is the
+design target — *marked unverified until benchmarked end-to-end.*
+
+**[AETHER](https://github.com/QuantumDrizzy/AETHER) — hard physics, implemented *correctly*.**
+Computational-materials lab: electronic structure, the full topological set (SSH, Haldane, Kane–Mele),
+metamaterials, GPU-accelerated solvers, inverse design. **~90 tests; every claim checked against a
+closed form.** Correctness isn't optional.
+
+**[HELIOS](https://github.com/QuantumDrizzy/HELIOS) — control loops that can't go down.**
+24/7 predictive DC-microgrid controller. Rust MPPT loop (100 ms tick), CNN-LSTM forecasting,
+post-quantum trust anchors. Where the lights actually have to stay on.
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/QuantumDrizzy/DRIFT/master/figures/phase7_four_faces.png" width="720">
 </p>
+
+## The metal — systems & hardware
+
+**[Blaze](https://github.com/QuantumDrizzy/Blaze) — GPU compression for massive scientific & quantum data.**
+Tensor-Train / MPS compression, GPU SVD, MPS↔circuit bridge. The specialist tool the rest of the
+ecosystem leans on.
 
 ---
 
