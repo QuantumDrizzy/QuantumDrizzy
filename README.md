@@ -58,16 +58,4 @@ closed form.** Correctness isn't optional.
 24/7 predictive DC-microgrid controller. Rust MPPT loop (100 ms tick), CNN-LSTM forecasting,
 post-quantum trust anchors. Where the lights actually have to stay on.
 
-## The metal — systems & hardware
-
-**[Blaze](https://github.com/QuantumDrizzy/Blaze) — GPU compression for massive scientific & quantum data.**
-Tensor-Train / MPS compression, GPU SVD, MPS↔circuit bridge. The specialist tool the rest of the
-ecosystem leans on.
-
----
-
-**Stack:** CUDA (hand-written kernels, sm_120 roofline) · Rust (control loops, systems) ·
-C / C++17 (compile-time guarantees) · Python (AI/ML, analysis). AI is a first-class layer, not glue.
-No cloud, by choice.
-
 ---
