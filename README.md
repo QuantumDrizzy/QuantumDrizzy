@@ -17,10 +17,6 @@ or a materials physicist; the engineer who builds the systems to investigate the
 who cares enough to get the physics right and the numbers honest. The through-line: *physics computes
 by minimizing energy; the systems here exploit it.*
 
-**Stack:** CUDA (hand-written kernels, sm_120 roofline) · Rust (control loops, systems) ·
-C / C++17 (compile-time guarantees) · Python (AI/ML, analysis). AI is a first-class layer, not glue.
-No cloud, by choice.
-
 ---
 
 ## Flagship — [SUBSTRATE](https://github.com/QuantumDrizzy/SUBSTRATE): *can I make the metal go fast — and prove it?*
@@ -38,12 +34,6 @@ kernels and back the numbers.
 ---
 
 ## The metal — systems & hardware
-
-**[BLACKWALL](https://github.com/QuantumDrizzy/BLACKWALL) · [ICEPICK](https://github.com/QuantumDrizzy/ICEPICK) · [FLATLINE](https://github.com/QuantumDrizzy/FLATLINE) — the silicon, reverse-engineered.**
-A three-part Blackwell (sm_120) teardown, hand-written CUDA: the compute roofline (BLACKWALL), the
-microarchitecture beneath it — instruction latencies, caches, the SASS the compiler actually emits
-(ICEPICK), and the energy/thermal wall (FLATLINE). The metal, measured directly — compute ·
-communication · energy.
 
 **[Blaze](https://github.com/QuantumDrizzy/Blaze) — GPU compression for massive scientific & quantum data.**
 Tensor-Train / MPS compression, GPU SVD, MPS↔circuit bridge. The specialist tool the rest of the
@@ -78,5 +68,8 @@ computation.
 
 ---
 
-*More in the repos — same spine, other proving grounds. Everything reproducible; the metal is a tool,
-not the point.*
+**Stack:** CUDA (hand-written kernels, sm_120 roofline) · Rust (control loops, systems) ·
+C / C++17 (compile-time guarantees) · Python (AI/ML, analysis). AI is a first-class layer, not glue.
+No cloud, by choice.
+
+---
