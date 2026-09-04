@@ -50,8 +50,12 @@ Hamiltonian — the unification thesis, made measurable and benchmarked against 
 computation.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/QuantumDrizzy/DRIFT/master/figures/phase7_four_faces.png" width="720">
+  <img src="https://raw.githubusercontent.com/QuantumDrizzy/DRIFT/master/figures/phase7_roofline.png" width="720">
 </p>
+
+How far is real hardware from the physical floor of computation? **Six orders of magnitude above the
+Landauer wall** — DDR5 and GPU arithmetic on one side, DNA polymerase and the Margolus–Levitin bound on
+the other. That gap is the headroom unconventional substrates are competing for.
 
 **[SUBSTRATE](https://github.com/QuantumDrizzy/SUBSTRATE) — can I make the metal go fast, and prove it?**
 Multi-physics simulation engine. The physics is the hard problem; the point is the engine underneath:
@@ -60,7 +64,7 @@ lattice sizes, end-to-end break-even stated, not hidden** — plus tensor-networ
 systems.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/QuantumDrizzy/SUBSTRATE/master/benchmarks/plots/plaquette_roofline.png" width="720">
+  <img src="https://raw.githubusercontent.com/QuantumDrizzy/SUBSTRATE/master/docs/showcase/galaxy-rotation-dark-matter.png" width="760">
 </p>
 
 **[AETHER](https://github.com/QuantumDrizzy/AETHER) — hard physics, implemented *correctly*.**
@@ -75,6 +79,6 @@ accuracy-against-cost dial the other repositories turn — the numerical method 
 not a side project.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/QuantumDrizzy/Blaze/master/docs/img/error_vs_rank.png" width="640">
+  <img src="https://raw.githubusercontent.com/QuantumDrizzy/Blaze/master/docs/img/fidelity_matrix_qpt.png" width="640">
 </p>
 
