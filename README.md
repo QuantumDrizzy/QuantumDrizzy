@@ -72,6 +72,13 @@ Computational-materials lab: electronic structure, the full topological set (SSH
 metamaterials, GPU solvers with measured speedups, inverse design. **~90 tests; every claim checked
 against a closed form.** Correctness isn't optional.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/QuantumDrizzy/AETHER/master/figures/ising2d_gpu_speedup.png" width="680">
+</p>
+
+The benchmark publishes where CUDA **loses**: 0.3× at 32², break-even near L≈100, 222× at 1024². A
+speedup curve that never dips below 1× is a curve with the small sizes quietly removed.
+
 **[Blaze](https://github.com/QuantumDrizzy/Blaze) — the method that makes the rest tractable.**
 Tensor-Train / MPS compression for high-order scientific and quantum-state data: GPU SVD over a C ABI
 to Rust, MPS-to-circuit bridge, int8 quantisation with **measured** fidelity. Bond dimension χ is the
