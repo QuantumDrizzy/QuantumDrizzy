@@ -44,6 +44,22 @@ if you want to know how I treat a number that flatters me.
 
 ## Research grounds — the same skill, pointed at hard problems
 
+**[int4-gemv](https://github.com/QuantumDrizzy/int4-gemv) — the kernel, on real silicon.**
+Fused INT4 dequantisation GEMV for quantised LLM decode: one warp per output row, coalesced `uint32`
+loads, dequantisation in registers, FP16 weights never materialised. **85 % of the measured memory
+roofline** on the projections that dominate a 7B's parameter count, against 66 % for the library
+people actually run.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/QuantumDrizzy/int4-gemv/master/docs/img/roofline.png" width="760">
+</p>
+
+The repository leads with what went wrong: its own harness disproved the premise it was started on —
+Unibit had blamed dequantisation arithmetic for a 15× decode gap, and isolating the GEMV showed the
+existing kernel was already at 58–70 % of roofline. Headline corrected from 15× to ~1.5× **before**
+any CUDA was written. It also refuses to call the 1.4× a speedup over bitsandbytes, because the
+formats differ and theirs is the harder decode.
+
 **[DRIFT](https://github.com/QuantumDrizzy/DRIFT) — the structure under the problem.**
 Optimization, self-assembly and neural memory (Hopfield) read as ground states of *one* Ising
 Hamiltonian — the unification thesis, made measurable and benchmarked against the Landauer floor of
