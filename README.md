@@ -54,7 +54,7 @@ format** — NF4, block 64, FP32 absmax — on a 7B's real projection shapes.
   <img src="https://raw.githubusercontent.com/QuantumDrizzy/int4-gemv/master/docs/img/roofline.png" width="900">
 </p>
 
-**1.03–1.10×, and it loses one shape.** Comparing our INT4 kernel against their NF4 would have shown
+**1.03–1.12× on every shape.** Comparing our INT4 kernel against their NF4 would have shown
 1.4×, and that is what this repository would be claiming if the like-for-like variant had never been
 written — the format is worth 19–31 % on its own, with the kernel held constant.
 
