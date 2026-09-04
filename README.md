@@ -19,17 +19,26 @@ by minimizing energy; the systems here exploit it.*
 
 ---
 
-## Flagship — [SUBSTRATE](https://github.com/QuantumDrizzy/SUBSTRATE): *can I make the metal go fast — and prove it?*
+## Flagship — [Unibit](https://github.com/QuantumDrizzy/unibit): *what does this work actually cost the machine?*
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/QuantumDrizzy/SUBSTRATE/master/benchmarks/plots/plaquette_roofline.png" width="720">
+  <img src="https://raw.githubusercontent.com/QuantumDrizzy/unibit/master/docs/img/density.png" width="760">
 </p>
 
-A multi-physics / bio-electromagnetics simulation engine. The physics is the hard problem; the point
-is the engine underneath: **hand-written CUDA (sm_120) with an honest, kernel-only roofline — measured
-on a Blackwell sm_120, re-runnable on any CUDA GPU; end-to-end break-even stated, not hidden** — plus
-tensor-network solvers for many-body systems. Start here if you want to know whether I can write fast
-kernels and back the numbers.
+A 256-bit instruction set, a cycle-accurate emulator, an assembler and an object format — written in
+Rust with **zero dependencies** — built to answer one question honestly: how many instructions must an
+architecture retire to do real work?
+
+Three workloads measured: int8 matvec at a 7B model's hidden size, Ising coupling energy, a 256-site
+MPS contraction. The headline result is a **negative** one — `VDOT.B` has exactly the same arithmetic
+density as AVX2's `VPMADDUBSW`, so 256-bit width buys nothing; only the fused `ZIPPER2` contraction is
+genuinely ahead. Measurement also exposed a hole in my own design (no mixed-width int8×int64 dot,
+costing 34 % of achievable density), documented rather than hidden.
+
+**And the number I did not publish:** dividing instruction counts by an assumed 3 GHz would have shown
+this beating both CPU and GPU. The host baselines are ~97 % dispatch overhead — an *empty* CUDA matmul
+costs 45.66 µs against 46.8 µs measured — so that comparison measures Python, not silicon. Start here
+if you want to know how I treat a number that flatters me.
 
 ---
 
@@ -44,15 +53,20 @@ computation.
   <img src="https://raw.githubusercontent.com/QuantumDrizzy/DRIFT/master/figures/phase7_four_faces.png" width="720">
 </p>
 
-**[KHAOS](https://github.com/QuantumDrizzy/KHAOS) — real-time systems where safety is *enforced*, not hoped for.**
-Closed-loop BCI kernel: a CUDA DSP hot-path, stimulation limits guaranteed by the C++ compiler
-(`static_assert`), three independent safety layers, post-quantum audit ledger. Sub-100 µs is the
-design target — *marked unverified until benchmarked end-to-end.*
+**[SUBSTRATE](https://github.com/QuantumDrizzy/SUBSTRATE) — can I make the metal go fast, and prove it?**
+Multi-physics simulation engine. The physics is the hard problem; the point is the engine underneath:
+**hand-written CUDA (sm_120) with an honest, kernel-only roofline — 3× → 139× vs JAX-CPU across
+lattice sizes, end-to-end break-even stated, not hidden** — plus tensor-network solvers for many-body
+systems.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/QuantumDrizzy/SUBSTRATE/master/benchmarks/plots/plaquette_roofline.png" width="720">
+</p>
 
 **[AETHER](https://github.com/QuantumDrizzy/AETHER) — hard physics, implemented *correctly*.**
 Computational-materials lab: electronic structure, the full topological set (SSH, Haldane, Kane–Mele),
-metamaterials, GPU-accelerated solvers, inverse design. **~90 tests; every claim checked against a
-closed form.** Correctness isn't optional.
+metamaterials, GPU solvers with measured speedups, inverse design. **~90 tests; every claim checked
+against a closed form.** Correctness isn't optional.
 
 **[Blaze](https://github.com/QuantumDrizzy/Blaze) — the method that makes the rest tractable.**
 Tensor-Train / MPS compression for high-order scientific and quantum-state data: GPU SVD over a C ABI
@@ -64,6 +78,3 @@ not a side project.
   <img src="https://raw.githubusercontent.com/QuantumDrizzy/Blaze/master/docs/img/error_vs_rank.png" width="640">
 </p>
 
-**[HELIOS](https://github.com/QuantumDrizzy/HELIOS) — control loops that can't go down.**
-24/7 predictive DC-microgrid controller. Rust MPPT loop (100 ms tick), CNN-LSTM forecasting,
-post-quantum trust anchors. Where the lights actually have to stay on.
