@@ -54,6 +54,16 @@ Computational-materials lab: electronic structure, the full topological set (SSH
 metamaterials, GPU-accelerated solvers, inverse design. **~90 tests; every claim checked against a
 closed form.** Correctness isn't optional.
 
+**[Blaze](https://github.com/QuantumDrizzy/Blaze) — the method that makes the rest tractable.**
+Tensor-Train / MPS compression for high-order scientific and quantum-state data: GPU SVD over a C ABI
+to Rust, MPS-to-circuit bridge, int8 quantisation with **measured** fidelity. Bond dimension χ is the
+accuracy-against-cost dial the other repositories turn — the numerical method underneath the physics,
+not a side project.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/QuantumDrizzy/Blaze/master/docs/img/error_vs_rank.png" width="640">
+</p>
+
 **[HELIOS](https://github.com/QuantumDrizzy/HELIOS) — control loops that can't go down.**
 24/7 predictive DC-microgrid controller. Rust MPPT loop (100 ms tick), CNN-LSTM forecasting,
 post-quantum trust anchors. Where the lights actually have to stay on.
