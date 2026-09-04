@@ -45,20 +45,22 @@ if you want to know how I treat a number that flatters me.
 ## Research grounds — the same skill, pointed at hard problems
 
 **[int4-gemv](https://github.com/QuantumDrizzy/int4-gemv) — the kernel, on real silicon.**
-Fused INT4 dequantisation GEMV for quantised LLM decode: one warp per output row, coalesced `uint32`
-loads, dequantisation in registers, FP16 weights never materialised. **85 % of the measured memory
-roofline** on the projections that dominate a 7B's parameter count, against 66 % for the library
-people actually run.
+Fused 4-bit dequantisation GEMV for quantised LLM decode: one warp per output row, coalesced `uint32`
+loads, FP16 weights never materialised, and the 16-entry NormalFloat table held in the warp's register
+file via `__shfl_sync` rather than in memory. Benchmarked against bitsandbytes in **exactly its own
+format** — NF4, block 64, FP32 absmax — on a 7B's real projection shapes.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/QuantumDrizzy/int4-gemv/master/docs/img/roofline.png" width="760">
+  <img src="https://raw.githubusercontent.com/QuantumDrizzy/int4-gemv/master/docs/img/roofline.png" width="900">
 </p>
 
-The repository leads with what went wrong: its own harness disproved the premise it was started on —
-Unibit had blamed dequantisation arithmetic for a 15× decode gap, and isolating the GEMV showed the
-existing kernel was already at 58–70 % of roofline. Headline corrected from 15× to ~1.5× **before**
-any CUDA was written. It also refuses to call the 1.4× a speedup over bitsandbytes, because the
-formats differ and theirs is the harder decode.
+**1.03–1.10×, and it loses one shape.** Comparing our INT4 kernel against their NF4 would have shown
+1.4×, and that is what this repository would be claiming if the like-for-like variant had never been
+written — the format is worth 19–31 % on its own, with the kernel held constant.
+
+The repository has been wrong twice and both are on the record: the harness disproved its founding
+premise before any CUDA existed, and writing the fair comparison cut its own headline in half. That is
+the part worth reading.
 
 **[DRIFT](https://github.com/QuantumDrizzy/DRIFT) — the structure under the problem.**
 Optimization, self-assembly and neural memory (Hopfield) read as ground states of *one* Ising
