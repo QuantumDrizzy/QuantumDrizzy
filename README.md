@@ -1,5 +1,41 @@
 
-### 1 · [QuBLAR](https://github.com/QuantumDrizzy/QuBLAR) — an Ising photonic engine: *bits are dimensions, not pixels*
+### 1 · [DRiFT](https://github.com/QuantumDrizzy/DRiFT) — computronium: *matter that computes by relaxing*
+
+<p align="center">
+  <img src="assets/cinema_recall.gif" width="820">
+</p>
+
+Optimization, self-assembly and neural memory read as ground states of *one* Ising Hamiltonian. Here,
+a memory made of nothing but 2304 spins: the word is stored as a ground state, the cue has 40 % of its
+spins flipped, and the system remembers by going downhill — one spin at a time, every flip lowering
+the energy. **Overlap 0.200 → 1.000, energy −46 → −1152, monotone.** Storing three words instead fell
+into a *spurious mixture* (overlap 0.848) — the classic Hopfield failure, measured and kept on record.
+
+How far is real hardware from the physical floor of computation? **Six orders of magnitude above the
+Landauer wall** — that gap is the headroom unconventional substrates are competing for.
+
+### 2 · [MTLB](https://github.com/QuantumDrizzy/MTLB) — metal + lab: *one processor programme, CPU → TPU → QPU*
+
+<p align="center">
+  <img src="assets/mtlb_programme.gif" width="900">
+</p>
+
+A 256-bit instruction set, a cycle-accurate emulator, an assembler and an object format — Rust,
+**zero dependencies** — built to answer one question honestly: *what does this work actually cost the
+machine?* The CPU rung is **measured** on three real workloads (int8 matvec at a 7B's hidden size,
+Ising coupling energy, a 256-site MPS contraction). The tensor and quantum rungs are **planned**
+milestones; QGPU and
+QRAM are hypothetical, drawn as illustrations (a bucket-brigade QRAM), and the figure says so.
+
+The headline is a **negative** result: `VDOT.B` has exactly the arithmetic density of AVX2's
+`VPMADDUBSW`, so 256-bit width buys nothing; only the fused `ZIPPER2` contraction is genuinely ahead.
+Measurement also exposed a hole in my own design (no mixed-width int8×int64 dot, 34 % of achievable
+density), documented rather than hidden. **And the number I did not publish:** dividing instruction
+counts by an assumed 3 GHz would have shown this beating both CPU and GPU — but the host baselines are
+~97 % dispatch overhead (an *empty* CUDA matmul costs 45.66 µs against 46.8 µs measured), so that
+comparison measures Python, not silicon.
+
+### 3 · [QuBLAR](https://github.com/QuantumDrizzy/QuBLAR) — an Ising photonic engine: *bits are dimensions, not pixels*
 
 <p align="center">
   <img src="assets/dimensions_369.gif" width="900">
@@ -17,41 +53,6 @@ the branches disagreed on most: their exact 2^12 posterior, cooled from T ≈ 96
 6- and 9-cube of branches (vertex = branch, edge = one bit flip). At T = 1, **12/12 bits match the
 truth** — the disagreement was sampling, not evidence. The baseline's own failure (an apex artifact) is
 filed as a known limit, not tuned away.
-
-### 2 · [DRiFT](https://github.com/QuantumDrizzy/DRiFT) — computronium: *matter that computes by relaxing*
-
-<p align="center">
-  <img src="assets/cinema_recall.gif" width="820">
-</p>
-
-Optimization, self-assembly and neural memory read as ground states of *one* Ising Hamiltonian. Here,
-a memory made of nothing but 2304 spins: the word is stored as a ground state, the cue has 40 % of its
-spins flipped, and the system remembers by going downhill — one spin at a time, every flip lowering
-the energy. **Overlap 0.200 → 1.000, energy −46 → −1152, monotone.** Storing three words instead fell
-into a *spurious mixture* (overlap 0.848) — the classic Hopfield failure, measured and kept on record.
-
-How far is real hardware from the physical floor of computation? **Six orders of magnitude above the
-Landauer wall** — that gap is the headroom unconventional substrates are competing for.
-
-### 3 · [MTLB](https://github.com/QuantumDrizzy/MTLB) — metal + lab: *one processor programme, CPU → TPU → QPU*
-
-<p align="center">
-  <img src="assets/mtlb_programme.gif" width="900">
-</p>
-
-A 256-bit instruction set, a cycle-accurate emulator, an assembler and an object format — Rust,
-**zero dependencies** — built to answer one question honestly: *what does this work actually cost the
-machine?* The CPU rung is **measured** on three real workloads (int8 matvec at a 7B's hidden size,
-Ising coupling energy, a 256-site MPS contraction). The tensor and quantum rungs are **planned**
-milestones; QGPU and QRAM are research questions, and the figure says so.
-
-The headline is a **negative** result: `VDOT.B` has exactly the arithmetic density of AVX2's
-`VPMADDUBSW`, so 256-bit width buys nothing; only the fused `ZIPPER2` contraction is genuinely ahead.
-Measurement also exposed a hole in my own design (no mixed-width int8×int64 dot, 34 % of achievable
-density), documented rather than hidden. **And the number I did not publish:** dividing instruction
-counts by an assumed 3 GHz would have shown this beating both CPU and GPU — but the host baselines are
-~97 % dispatch overhead (an *empty* CUDA matmul costs 45.66 µs against 46.8 µs measured), so that
-comparison measures Python, not silicon.
 
 ### 4 · [Blaze](https://github.com/QuantumDrizzy/Blaze) — the compressor the other engines speak through
 
