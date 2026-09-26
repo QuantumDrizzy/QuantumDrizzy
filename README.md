@@ -2,20 +2,8 @@
 
 > **Performance is a function of what you control. So I control all of it.**
 
-**Research software engineer** building **bare-metal, high-performance systems** — and using them as
-instruments to investigate hard problems. CUDA, Rust and C/C++ where latency and control decide the
-outcome; Python where it pays. AI runs through it both ways: systems that *run* models, and systems
-built *with* models (neural-guided annealers, compile-time-safe neural interfaces, forecasting
-control loops). Solo, end to end, on bare metal (Arch Linux, CUDA-first) — with
-**benchmarks anyone can re-run.** The hardware is a tool I command, not a limit: the skill is the
-*architecture under the metal*, and it moves across whatever the silicon is — an edge board, a
-single GPU, a cluster. *(NVIDIA by preference — CUDA, CUDA-Q, tensor cores, Blackwell.)*
-
-**Systems first, always — but driven by research.** The fields below — quantum, neuroscience,
-materials, energy — are proving grounds for the same skill, *not the identity*. Not a neuroscientist
-or a materials physicist; the engineer who builds the systems to investigate them at the metal, and
-who cares enough to get the physics right and the numbers honest. The through-line: *physics computes
-by minimizing energy; the systems here exploit it.*
+**Bare-metal HPC systems engineer — AI + quantum.** Engines built from the metal up, each
+measured against a named baseline, with its limits on the record.
 
 ---
 
@@ -98,29 +86,3 @@ turns. It compresses only what has structure — so the random control is on the
 | QuBLAR ghost bits (2^20 posterior) | 26214× | marginals to 7e-7 | TT rank 1–2: a sharp posterior |
 
 *RTX 5060 Ti (sm_120). Numbers from each repository's own results files; nothing re-run for the card.*
-
----
-
-## Research grounds — the same skill, pointed at hard problems
-
-**[SUBSTRATE](https://github.com/QuantumDrizzy/SUBSTRATE) — can I make the metal go fast, and prove it?**
-Multi-physics simulation engine. The physics is the hard problem; the point is the engine underneath:
-**hand-written CUDA (sm_120) with an honest, kernel-only roofline — 3× → 139× vs JAX-CPU across
-lattice sizes, end-to-end break-even stated, not hidden** — plus tensor-network solvers for many-body
-systems.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/QuantumDrizzy/SUBSTRATE/master/docs/showcase/galaxy-rotation-dark-matter.png" width="760">
-</p>
-
-**[AETHER](https://github.com/QuantumDrizzy/AETHER) — hard physics, implemented *correctly*.**
-Computational-materials lab: electronic structure, the full topological set (SSH, Haldane, Kane–Mele),
-metamaterials, GPU solvers with measured speedups, inverse design. **~90 tests; every claim checked
-against a closed form.** Correctness isn't optional.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/QuantumDrizzy/AETHER/master/figures/ising2d_gpu_speedup.png" width="680">
-</p>
-
-The benchmark publishes where CUDA **loses**: 0.3× at 32², break-even near L≈100, 222× at 1024². A
-speedup curve that never dips below 1× is a curve with the small sizes quietly removed.
