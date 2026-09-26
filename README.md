@@ -32,8 +32,6 @@ the branches disagreed on most: their exact 2^12 posterior, cooled from T ≈ 96
 truth** — the disagreement was sampling, not evidence. The baseline's own failure (an apex artifact) is
 filed as a known limit, not tuned away.
 
-### 3 · [QuBLAR](https://github.com/QuantumDrizzy/QuBLAR) — an Ising photonic engine: *bits are dimensions, not pixels*
-
 <p align="center">
   <img src="assets/mtlb_programme.gif" width="900">
 </p>
