@@ -1,16 +1,3 @@
-# Antonio Zambudio
-
-> **Performance is a function of what you control. So I control all of it.**
-
-**Bare-metal HPC systems engineer — AI + quantum.** Engines built from the metal up, each
-measured against a named baseline, with its limits on the record.
-
----
-
-## Four engines, each rendered from its own numbers
-
-Every frame below is computed state, not an animation of an idea. Where a number is measured it says
-so; where something is planned or hypothetical, it says that too.
 
 ### 1 · [QuBLAR](https://github.com/QuantumDrizzy/QuBLAR) — an Ising photonic engine: *bits are dimensions, not pixels*
 
