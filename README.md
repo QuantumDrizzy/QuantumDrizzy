@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="assets/cinema_recall.gif" width="820">
+  <img src="assets/cinema_mycelium.gif" width="820">
 </p>
 
 ### · [DRiFT](https://github.com/QuantumDrizzy/DRiFT) — computronium: *matter that computes by relaxing*
 
 Optimization, self-assembly and neural memory read as ground states of *one* Ising Hamiltonian. Here,
-a memory made of nothing but 2304 spins: the word is stored as a ground state, the cue has 40 % of its
-spins flipped, and the system remembers by going downhill — one spin at a time, every flip lowering
-the energy. **Overlap 0.200 → 1.000, energy −46 → −1152, monotone.** Storing three words instead fell
+a memory made of nothing but 6400 spins: a grown mycelium is stored as a ground state, the cue has 40 %
+of its spins flipped, and the system remembers by going downhill — one spin at a time, every flip
+lowering the energy. **Overlap 0.200 → 1.000, energy −128 → −3202, monotone.** Storing three words instead fell
 into a *spurious mixture* (overlap 0.848) — the classic Hopfield failure, measured and kept on record.
 
 How far is real hardware from the physical floor of computation? **Six orders of magnitude above the
