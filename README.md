@@ -1,9 +1,8 @@
-
-### 1 · [DRiFT](https://github.com/QuantumDrizzy/DRiFT) — computronium: *matter that computes by relaxing*
-
 <p align="center">
   <img src="assets/cinema_recall.gif" width="820">
 </p>
+
+### 1 · [DRiFT](https://github.com/QuantumDrizzy/DRiFT) — computronium: *matter that computes by relaxing*
 
 Optimization, self-assembly and neural memory read as ground states of *one* Ising Hamiltonian. Here,
 a memory made of nothing but 2304 spins: the word is stored as a ground state, the cue has 40 % of its
@@ -13,6 +12,25 @@ into a *spurious mixture* (overlap 0.848) — the classic Hopfield failure, meas
 
 How far is real hardware from the physical floor of computation? **Six orders of magnitude above the
 Landauer wall** — that gap is the headroom unconventional substrates are competing for.
+
+### 3 · [QuBLAR](https://github.com/QuantumDrizzy/QuBLAR) — an Ising photonic engine: *bits are dimensions, not pixels*
+
+<p align="center">
+  <img src="assets/dimensions_369.gif" width="900">
+</p>
+
+Quantum-inspired, **no qubits**. A hidden structure is imaged from how much of a signal gets through
+it (muon tomography of a synthetic pyramid, known truth). Every voxel is a bit, the reconstruction is a
+QUBO, and annealing to T = 1 *samples the posterior*: each run is a branch, and the map comes out
+three-state — *exists*, *does not exist*, *undecided*. A rerun with the prior switched off tells what
+came from the data and what came from the assumptions.
+
+At 2^27 muons the classical baseline (MLEM) puts the void **30 m off**; the Ising engine finds 11
+voxels, **all 11 correct, centroid 0.1 m from the truth, zero false voids**. The film is the 12 voxels
+the branches disagreed on most: their exact 2^12 posterior, cooled from T ≈ 96 to 1, drawn as the 3-,
+6- and 9-cube of branches (vertex = branch, edge = one bit flip). At T = 1, **12/12 bits match the
+truth** — the disagreement was sampling, not evidence. The baseline's own failure (an apex artifact) is
+filed as a known limit, not tuned away.
 
 ### 2 · [MTLB](https://github.com/QuantumDrizzy/MTLB) — metal + lab: *one processor programme, CPU → TPU → QPU*
 
@@ -34,25 +52,6 @@ density), documented rather than hidden. **And the number I did not publish:** d
 counts by an assumed 3 GHz would have shown this beating both CPU and GPU — but the host baselines are
 ~97 % dispatch overhead (an *empty* CUDA matmul costs 45.66 µs against 46.8 µs measured), so that
 comparison measures Python, not silicon.
-
-### 3 · [QuBLAR](https://github.com/QuantumDrizzy/QuBLAR) — an Ising photonic engine: *bits are dimensions, not pixels*
-
-<p align="center">
-  <img src="assets/dimensions_369.gif" width="900">
-</p>
-
-Quantum-inspired, **no qubits**. A hidden structure is imaged from how much of a signal gets through
-it (muon tomography of a synthetic pyramid, known truth). Every voxel is a bit, the reconstruction is a
-QUBO, and annealing to T = 1 *samples the posterior*: each run is a branch, and the map comes out
-three-state — *exists*, *does not exist*, *undecided*. A rerun with the prior switched off tells what
-came from the data and what came from the assumptions.
-
-At 2^27 muons the classical baseline (MLEM) puts the void **30 m off**; the Ising engine finds 11
-voxels, **all 11 correct, centroid 0.1 m from the truth, zero false voids**. The film is the 12 voxels
-the branches disagreed on most: their exact 2^12 posterior, cooled from T ≈ 96 to 1, drawn as the 3-,
-6- and 9-cube of branches (vertex = branch, edge = one bit flip). At T = 1, **12/12 bits match the
-truth** — the disagreement was sampling, not evidence. The baseline's own failure (an apex artifact) is
-filed as a known limit, not tuned away.
 
 ### 4 · [Blaze](https://github.com/QuantumDrizzy/Blaze) — the compressor the other engines speak through
 
