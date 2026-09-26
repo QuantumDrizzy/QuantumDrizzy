@@ -2,7 +2,7 @@
   <img src="assets/cinema_recall.gif" width="820">
 </p>
 
-### 1 · [DRiFT](https://github.com/QuantumDrizzy/DRiFT) — computronium: *matter that computes by relaxing*
+### · [DRiFT](https://github.com/QuantumDrizzy/DRiFT) — computronium: *matter that computes by relaxing*
 
 Optimization, self-assembly and neural memory read as ground states of *one* Ising Hamiltonian. Here,
 a memory made of nothing but 2304 spins: the word is stored as a ground state, the cue has 40 % of its
@@ -13,11 +13,11 @@ into a *spurious mixture* (overlap 0.848) — the classic Hopfield failure, meas
 How far is real hardware from the physical floor of computation? **Six orders of magnitude above the
 Landauer wall** — that gap is the headroom unconventional substrates are competing for.
 
-### 3 · [QuBLAR](https://github.com/QuantumDrizzy/QuBLAR) — an Ising photonic engine: *bits are dimensions, not pixels*
-
 <p align="center">
   <img src="assets/dimensions_369.gif" width="900">
 </p>
+
+### · [QuBLAR](https://github.com/QuantumDrizzy/QuBLAR) — an Ising photonic engine: *bits are dimensions, not pixels*
 
 Quantum-inspired, **no qubits**. A hidden structure is imaged from how much of a signal gets through
 it (muon tomography of a synthetic pyramid, known truth). Every voxel is a bit, the reconstruction is a
@@ -32,11 +32,13 @@ the branches disagreed on most: their exact 2^12 posterior, cooled from T ≈ 96
 truth** — the disagreement was sampling, not evidence. The baseline's own failure (an apex artifact) is
 filed as a known limit, not tuned away.
 
-### 2 · [MTLB](https://github.com/QuantumDrizzy/MTLB) — metal + lab: *one processor programme, CPU → TPU → QPU*
+### 3 · [QuBLAR](https://github.com/QuantumDrizzy/QuBLAR) — an Ising photonic engine: *bits are dimensions, not pixels*
 
 <p align="center">
   <img src="assets/mtlb_programme.gif" width="900">
 </p>
+
+### · [MTLB](https://github.com/QuantumDrizzy/MTLB) — metal + lab: *one processor programme, CPU → TPU → QPU*
 
 A 256-bit instruction set, a cycle-accurate emulator, an assembler and an object format — Rust,
 **zero dependencies** — built to answer one question honestly: *what does this work actually cost the
@@ -53,11 +55,11 @@ counts by an assumed 3 GHz would have shown this beating both CPU and GPU — bu
 ~97 % dispatch overhead (an *empty* CUDA matmul costs 45.66 µs against 46.8 µs measured), so that
 comparison measures Python, not silicon.
 
-### 4 · [Blaze](https://github.com/QuantumDrizzy/Blaze) — the compressor the other engines speak through
-
 <p align="center">
   <img src="assets/blaze_bench_card.png" width="860">
 </p>
+
+### · [Blaze](https://github.com/QuantumDrizzy/Blaze) — the compressor the other engines speak through
 
 Tensor-Train / MPS compression: GPU SVD over a C ABI to Rust, MPS-to-circuit bridge, int8 and 4-bit
 cores with **measured** error. Bond dimension χ is the accuracy-against-cost dial the rest of the stack
