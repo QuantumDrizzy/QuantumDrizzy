@@ -17,7 +17,7 @@ Landauer wall** — that gap is the headroom unconventional substrates are compe
   <img src="assets/dimensions_369.gif" width="900">
 </p>
 
-### · [QuBLAR](https://github.com/QuantumDrizzy/QuBLAR) — an Ising photonic engine: *bits are dimensions, not pixels*
+### · [QμBLAR](https://github.com/QuantumDrizzy/QuBLAR) — an Ising photonic engine: *bits are dimensions, not pixels*
 
 Quantum-inspired, **no qubits**. A hidden structure is imaged from how much of a signal gets through
 it (muon tomography of a synthetic pyramid, known truth). Every voxel is a bit, the reconstruction is a
@@ -70,6 +70,6 @@ turns. It compresses only what has structure — so the random control is on the
 | TFIM n = 16, paramagnet | 77× | lossless to ~1e-7 | |
 | paramagnet + int8 cores | 447× | fidelity 0.99994 | |
 | paramagnet + 4-bit cores | 705× | quantized, error composed | |
-| QuBLAR ghost bits (2^20 posterior) | 26214× | marginals to 7e-7 | TT rank 1–2: a sharp posterior |
+| QμBLAR ghost bits (2^20 posterior) | 26214× | marginals to 7e-7 | TT rank 1–2: a sharp posterior |
 
 *RTX 5060 Ti (sm_120). Numbers from each repository's own results files; nothing re-run for the card.*
